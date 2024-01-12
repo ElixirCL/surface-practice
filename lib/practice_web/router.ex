@@ -36,8 +36,12 @@ defmodule PracticeWeb.Router do
 
     live "/timer", Live.Timer
     live "/timer-solution", Live.TimerSolution
+
     live "/tictactoe", Live.TicTacToe
     live "/tictactoe-solution", Live.TicTacToeSolution
+
+    live "/button", Live.Button
+    live "/button-solution", Live.ButtonSolution
   end
 
   # Other scopes may use custom stacks.
