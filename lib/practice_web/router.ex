@@ -36,6 +36,8 @@ defmodule PracticeWeb.Router do
 
     live "/timer", Live.Timer
     live "/timer-solution", Live.TimerSolution
+    live "/tictactoe", Live.TicTacToe
+    live "/tictactoe-solution", Live.TicTacToeSolution
   end
 
   # Other scopes may use custom stacks.
@@ -63,7 +65,7 @@ defmodule PracticeWeb.Router do
   if Mix.env() == :dev do
     scope "/" do
       pipe_through :browser
-      surface_catalogue "/catalogue"
+      surface_catalogue("/catalogue")
     end
   end
 end

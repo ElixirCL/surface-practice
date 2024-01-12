@@ -1,9 +1,9 @@
-defmodule PracticeWeb.Live.Timer do
+defmodule PracticeWeb.Live.TicTacToe do
   use Surface.LiveView
 
   def render(assigns) do
     ~F"""
-    Timer Exercise
+    Tic Tac Toe
     """
   end
 end
