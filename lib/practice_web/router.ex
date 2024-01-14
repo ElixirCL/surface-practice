@@ -42,6 +42,9 @@ defmodule PracticeWeb.Router do
 
     live "/button", Live.Button
     live "/button-solution", Live.ButtonSolution
+
+    live "/todo", Live.Todo
+    live "/todo-solution", Live.TodoSolution
   end
 
   # Other scopes may use custom stacks.

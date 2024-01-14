@@ -119,18 +119,18 @@ defmodule PracticeWeb.Live.TicTacToeSolution do
     ~F"""
     <style>
       .square {
-        background: #fff;
-        border: 1px solid #999;
-        float: left;
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 34px;
-        height: 34px;
-        margin-right: -1px;
-        margin-top: -1px;
-        padding: 0;
-        text-align: center;
-        width: 34px;
+      background: #fff;
+      border: 1px solid #999;
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 34px;
+      height: 34px;
+      margin-right: -1px;
+      margin-top: -1px;
+      padding: 0;
+      text-align: center;
+      width: 34px;
       }
     </style>
     <button class="square" value={@position} :on-click="on:click:square">{@icon}</button>
@@ -145,13 +145,13 @@ defmodule PracticeWeb.Live.TicTacToeSolution do
     ~F"""
     <style>
       .status {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
       }
 
       .board-row:after {
-        clear: both;
-        content: '';
-        display: table;
+      clear: both;
+      content: '';
+      display: table;
       }
     </style>
     <div class="status font-bold">
@@ -201,16 +201,16 @@ defmodule PracticeWeb.Live.TicTacToeSolution do
     ~F"""
     <style>
       .game {
-        display: flex;
-        flex-direction: row;
+      display: flex;
+      flex-direction: row;
       }
 
       .game-info {
-        margin-left: 20px;
+      margin-left: 20px;
       }
 
       .btn-reset {
-        @apply bg-white py-2 px-4 border rounded shadow;
+      @apply bg-white py-2 px-4 border rounded shadow;
       }
     </style>
     <div class="game">
