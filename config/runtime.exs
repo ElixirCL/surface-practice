@@ -20,6 +20,8 @@ if System.get_env("PHX_SERVER") do
   config :practice, PracticeWeb.Endpoint, server: true
 end
 
+config :practice, movie_api_key_solution: System.get_env("MOVIE_DB_API_SOLUTION_KEY")
+
 if config_env() == :prod do
   database_path =
     System.get_env("DATABASE_PATH") ||

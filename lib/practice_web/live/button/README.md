@@ -13,6 +13,10 @@ $ mix test test/practice_web/live/button/button_test.exs
 
 Para validar el componente
 
+## Objetivos de Aprendizaje
+
+- Aprender a utilizar las herramientas `mix test`
+
 ## Más Info
 - https://surface-ui.org/testing
 - https://hexdocs.pm/phoenix_live_view/Phoenix.LiveViewTest.html

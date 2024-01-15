@@ -14,3 +14,7 @@ Crear un temporizador de 5 minutos que pueda ser iniciado y detenido.
 - El contador se detiene a los 00:00
 
 Usar Phoenix y Surface UI para resolver este ejercicio.
+
+# Objetivos de Aprendizaje
+
+- Aprender a Gatillar y manejar eventos de servidor con `handle_info`.

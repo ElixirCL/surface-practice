@@ -17,3 +17,7 @@ Usar Hooks:
 - https://hexdocs.pm/phoenix_live_view/js-interop.html
 
 ![TODO](https://github.com/ElixirCL/surface-practice/assets/292738/f9a82d2e-b78d-40ab-af96-ea4d88c686c0)
+
+## Objetivos de Aprendizaje
+
+- Aprender a gatillar eventos de Javascript e interactuar usando Hooks.

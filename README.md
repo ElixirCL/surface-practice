@@ -17,9 +17,9 @@ Ahora se puede ir a [`localhost:4000`](http://localhost:4000) desde le navegador
 
 Para saber los archivos y sus soluciones puede revisar `practice_web/router.ex`
 
-## Licencia BSD 2
+## Licencia
 
-BSD 2
+BSD 3-Clause License
 
 ## Elixir Chile
 

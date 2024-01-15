@@ -47,3 +47,5 @@ assets/js/_hooks/
 
 # Ignore generated CSS file for components
 assets/css/_components.css
+
+.idea
