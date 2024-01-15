@@ -46,10 +46,12 @@ defmodule PracticeWeb.Live.MoviesSolution do
       </div>
         <div class="mt-4 grid grid-cols-6 md:grid-cols-3 gap-4">
             {#for %{title: title, image: image, id: id} <- @results}
-                <div>
+                <div class="">
                     <h2 class="text-xl">{title}</h2>
-                    <img class="h-100 w-auto max-w-full rounded-lg" src={image} alt={title} />
+                    <img class="h-100 w-auto rounded-lg" src={image} alt={title} />
                 </div>
+            {#else}
+                <p>No results found</p>
             {/for}
         </div>
     </div>
