@@ -14,13 +14,16 @@ defmodule PracticeWeb.Live.MoviesSolution do
   end
 
   def handle_event("on:click:search", _params, socket) do
-      case socket.assigns.search do
-          nil -> {:noreply, socket}
-          query -> {:noreply,
-              socket
-              |> assign(:search, nil)
-              |> assign(:results, Movies.search(query))}
-      end
+    case socket.assigns.search do
+      nil ->
+        {:noreply, socket}
+
+      query ->
+        {:noreply,
+         socket
+         |> assign(:search, nil)
+         |> assign(:results, Movies.search(query))}
+    end
   end
 
   # MARK: Lifecycle
@@ -44,16 +47,16 @@ defmodule PracticeWeb.Live.MoviesSolution do
           :on-click="on:click:search"
         >Search</button>
       </div>
-        <div class="mt-4 grid grid-cols-6 md:grid-cols-3 gap-4">
-            {#for %{title: title, image: image, id: id} <- @results}
-                <div class="">
-                    <h2 class="text-xl">{title}</h2>
-                    <img class="h-100 w-auto rounded-lg" src={image} alt={title} />
-                </div>
-            {#else}
-                <p>No results found</p>
-            {/for}
-        </div>
+      <div class="mt-4 grid grid-cols-6 md:grid-cols-3 gap-4">
+        {#for %{title: title, image: image, id: id} <- @results}
+          <div class="">
+            <h2 class="text-xl">{title}</h2>
+            <img class="h-100 w-auto rounded-lg" src={image} alt={title}>
+          </div>
+        {#else}
+          <p>No results found</p>
+        {/for}
+      </div>
     </div>
     """
   end

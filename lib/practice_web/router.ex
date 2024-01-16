@@ -48,6 +48,9 @@ defmodule PracticeWeb.Router do
 
     live "/movies", Live.Movies
     live "/movies-solution", Live.MoviesSolution
+
+    live "/tonystark", Live.IronMan
+    live "/tonystark-solution", Live.IronManSolution
   end
 
   # Other scopes may use custom stacks.
