@@ -51,6 +51,9 @@ defmodule PracticeWeb.Router do
 
     live "/tonystark", Live.IronMan
     live "/tonystark-solution", Live.IronManSolution
+
+    live "/phaser", Live.Phaser
+    live "/phaser-solution", Live.PhaserSolution
   end
 
   # Other scopes may use custom stacks.
