@@ -1,0 +1,7 @@
+{
+  "name": "surface-practice",
+  "private": true,
+  "dependencies": {
+    "phaser": "^3.70.0"
+  }
+}
