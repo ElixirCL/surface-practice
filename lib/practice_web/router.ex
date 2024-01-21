@@ -3,6 +3,8 @@ defmodule PracticeWeb.Router do
 
   import Surface.Catalogue.Router
 
+  @env Mix.env()
+
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -54,6 +56,9 @@ defmodule PracticeWeb.Router do
 
     live "/phaser", Live.Phaser
     live "/phaser-solution", Live.PhaserSolution
+
+    live "/pokeapi", Live.PokeAPI, :index
+    live "/pokeapi-solution", Live.PokeAPISolution, :index
   end
 
   # Other scopes may use custom stacks.
@@ -78,10 +83,20 @@ defmodule PracticeWeb.Router do
     end
   end
 
-  if Mix.env() == :dev do
+  if @env == :dev do
     scope "/" do
       pipe_through :browser
       surface_catalogue("/catalogue")
+    end
+  end
+
+  if @env == :test do
+    scope "/mocks", PracticeWeb do
+      pipe_through :api
+
+      scope "/pokeapi" do
+        get "/pokemon", Mocks.PokeAPI.Pokemon, :index
+      end
     end
   end
 end

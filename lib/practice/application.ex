@@ -6,6 +6,7 @@ defmodule Practice.Application do
   use Application
 
   @impl true
+
   def start(_type, _args) do
     children = [
       # Start the Telemetry supervisor
@@ -21,6 +22,18 @@ defmodule Practice.Application do
       # Start a worker by calling: Practice.Worker.start_link(arg)
       # {Practice.Worker, arg}
     ]
+
+    # children = case args do
+    #     [env: :test] -> children ++ [
+    #         {
+    #             Plug.Cowboy,
+    #             scheme: :http,
+    #             plug: Practice.Test.PokeAPIServer,
+    #             options: [port: 8081]
+    #         }
+    #     ]
+    #     _ -> children
+    # end
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options

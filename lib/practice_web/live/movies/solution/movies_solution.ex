@@ -48,7 +48,7 @@ defmodule PracticeWeb.Live.MoviesSolution do
         >Search</button>
       </div>
       <div class="mt-4 grid grid-cols-6 md:grid-cols-3 gap-4">
-        {#for %{title: title, image: image, id: id} <- @results}
+        {#for %{title: title, image: image, id: _id} <- @results}
           <div class="">
             <h2 class="text-xl">{title}</h2>
             <img class="h-100 w-auto rounded-lg" src={image} alt={title}>

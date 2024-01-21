@@ -54,7 +54,8 @@ defmodule Practice.MixProject do
       {:plug_cowboy, "~> 2.5"},
       {:surface, "~> 0.11.1"},
       {:surface_catalogue, "~> 0.6.0"},
-      {:req, "~> 0.4.0"}
+      {:req, "~> 0.4.0"},
+      {:mock, "~> 0.3.0", only: :test}
     ]
   end
 

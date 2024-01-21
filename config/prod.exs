@@ -18,3 +18,5 @@ config :logger, level: :info
 
 # Runtime production configuration, including reading
 # of environment variables, is done on config/runtime.exs.
+
+config :practice, pokeapi_base_url: "https://pokeapi.co/api/v2"

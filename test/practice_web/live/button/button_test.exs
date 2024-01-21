@@ -2,8 +2,8 @@ defmodule PracticeWeb.Live.Components.ButtonTest do
   use PracticeWeb.ConnCase, async: true
   use Surface.LiveViewTest
 
-  # alias PracticeWeb.Live.Components.Button
-  alias PracticeWeb.Live.Components.ButtonSolution, as: Button
+  alias PracticeWeb.Live.Components.Button
+  # alias PracticeWeb.Live.Components.ButtonSolution, as: Button
 
   describe "Button Component" do
     test "that renders a button" do

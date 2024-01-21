@@ -15,7 +15,7 @@ config :practice, Practice.Repo,
 config :practice, PracticeWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
   secret_key_base: "KCHiW/R8a/r9E1r1+zQJmHFD470cIv1Muf5x79+r0DAIyYfK98NRDKnpZkA83A3V",
-  server: false
+  server: true
 
 # In test we don't send emails.
 config :practice, Practice.Mailer, adapter: Swoosh.Adapters.Test
@@ -28,3 +28,5 @@ config :logger, level: :warning
 
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
+
+config :practice, pokeapi_base_url: "http://localhost:4002/mocks/pokeapi"

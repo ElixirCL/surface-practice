@@ -1,9 +1,9 @@
-defmodule PracticeWeb.Live.Phaser do
+defmodule PracticeWeb.Live.PokeAPI do
   use Surface.LiveView
 
   def render(assigns) do
     ~F"""
-    Phaser
+    PokeAPI
     """
   end
 end
